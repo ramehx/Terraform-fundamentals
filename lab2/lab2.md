@@ -62,14 +62,14 @@ While implementing the solution, try to follow good Terraform development practi
 
 Typical file structure:
 
+```text
 terraform-vm-lab
-  │
-  ├── main.tf
-  ├── variables.tf
-  ├── outputs.tf
-  └── providers.tf
-
-
+│
+├── main.tf
+├── variables.tf
+├── outputs.tf
+└── providers.tf
+```
 ---
 
 # Required Infrastructure
