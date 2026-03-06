@@ -8,13 +8,13 @@ This repository is organized into 5 labs, each covering essential Terraform conc
 
 - **[Lab 1: Terraform Installation and Basic Workflow](./lab1/)** - Install Terraform, authenticate to Azure, and learn the core Terraform commands (init, plan, apply, destroy)
 
-- **[Lab 2: TBD](./lab2/)** - Coming soon
+- **[Lab 2: Building Provisioning Structures Using Variables](./lab2/)** - Deployment of a Linux VM using variables.
 
-- **[Lab 3: TBD](./lab3/)** - Coming soon
+- **[Lab 3: Remote Backend and Terraform Import command](./lab3/)** - Configuring Remote Backend in Azure and use of Terraform Import command
 
-- **[Lab 4: TBD](./lab4/)** - Coming soon
+- **[Lab 4: Building a Reusable Module](./lab4/)** - Coming soon
 
-- **[Lab 5: TBD](./lab5/)** - Coming soon
+- **[Lab 5: CI/CD Pipeline with Terraform and Github Actions](./lab5/)** - Coming soon
 
 ---
 
