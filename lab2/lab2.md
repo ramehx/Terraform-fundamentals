@@ -63,11 +63,11 @@ While implementing the solution, try to follow good Terraform development practi
 Typical file structure:
 
 terraform-vm-lab
-│
-├── main.tf
-├── variables.tf
-├── outputs.tf
-└── terraform.tfvars
+  │
+  ├── main.tf
+  ├── variables.tf
+  ├── outputs.tf
+  └── providers.tf
 
 
 ---
