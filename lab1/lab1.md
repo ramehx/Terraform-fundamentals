@@ -38,7 +38,7 @@ The typical installation process on Windows is:
 1. Download the Terraform binary from the official website.
 2. Extract the downloaded file to a directory, for example:
 
-C:\Terraform
+`C:\Terraform`
 
 
 3. Add the directory to your **system PATH environment variable**.
