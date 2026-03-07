@@ -1,6 +1,6 @@
 # Terraform Fundamentals
 
-This is an auxiliary repository for the **Terraform Fundamentals training program**. It contains hands-on labs designed to help you master Terraform and Infrastructure as Code (IaC) principles.
+This is an auxiliary repository for the **Terraform Fundamentals training program**. It contains hands-on labs designed to help you practice Terraform and Infrastructure as Code (IaC) principles.
 
 ## Labs Overview
 
