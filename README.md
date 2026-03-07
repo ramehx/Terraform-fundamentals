@@ -10,7 +10,7 @@ This repository is organized into 5 labs, each covering essential Terraform conc
 
 - **[Lab 2: Building Provisioning Structures Using Variables](./lab2/)** - Deployment of a Linux VM using variables.
 
-- **[Lab 3: Remote Backend and Terraform Import command](./lab3/)** - Configuring Remote Backend in Azure and use of Terraform Import command
+- **[Lab 3: Remote Backend and Terraform Import command](./lab3/)** - Configuring Remote Backend in Azure and Importing existing resources to the code using Terraform Import command
 
 - **[Lab 4: Building a Reusable Module](./lab4/)** - Coming soon
 
