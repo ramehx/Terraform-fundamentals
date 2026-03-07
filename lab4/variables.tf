@@ -21,14 +21,15 @@ variable "sku_name" {
 variable "app_service_plan_name" {
   type        = string
   description = "App service plan name"
-  default     = "rameh-asp"
+  default     = "terraform-asp-dev"
 
 }
 
 variable "web_app_name" {
   type        = string
   description = "Web App Name"
-  default     = "rameh-linuxwebapp-dev"
+  default     = "terraform-linuxwebapp-dev"
 
 }
+
 
