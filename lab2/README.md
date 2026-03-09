@@ -31,6 +31,7 @@ Choose **ONE** of the following regions:
 | northeurope |
 | norwayeast |
 | switzerlandnorth |
+| canadacentral |
 
 Important rules:
 
@@ -38,7 +39,7 @@ Important rules:
 - Coordinate with the other students
 - **Maximum 2 students per region**
 
-Example distribution for 8 students:
+Example distribution for 9 students:
 
 | Region | Students |
 |------|------|
@@ -46,6 +47,7 @@ Example distribution for 8 students:
 | northeurope | 2 |
 | norwayeast | 2 |
 | switzerlandnorth | 2 |
+| canadacentral | 1 |
 
 ---
 
