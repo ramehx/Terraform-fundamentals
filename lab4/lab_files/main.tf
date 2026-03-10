@@ -1,20 +1,33 @@
-# Resource group
-resource "azurerm_resource_group" "resource_group" {
-  name     = var.resource_group_name
-  location = var.location
+# Terraform provider
+terraform {
+  required_version = ">= 1.5.0"
+
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.100"
+    }
+  }
+}
+# Provider declaration
+provider "azurerm" {
+  features {}
 
 }
 
+# data sourcing the existing Resource Group for your region (Check on Portal)
+data "azurerm_resource_group" "rg" {
+  name = "RESOURCE_GROUP_NAME_PORTAL"
+  
+}
 
-# Web App module call 
-module "app_service" {
+# Container app module call
+module "container_app" {
+  source = "./modules/container-app"
 
-  source = "./modules/app-service"
-
-  resource_group_name   = azurerm_resource_group.resource_group.name
-  location              = azurerm_resource_group.resource_group.location
-  app_service_plan_name = var.app_service_plan_name
-  web_app_name          = var.web_app_name
-  sku_name              = var.sku_name
-
+  resource_group_name  = data.azurerm_resource_group.rg.name
+  location             = data.azurerm_resource_group.rg.location
+  registry_name        = var.registry_name
+  container_group_name = var.container_group_name
+  dns_label            = var.dns_label
 }

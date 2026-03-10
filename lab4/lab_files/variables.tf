@@ -1,35 +1,9 @@
-variable "resource_group_name" {
-  type        = string
-  description = "Name of the RG"
-  default     = "rg_web_app"
-}
-
 variable "location" {
-  type        = string
-  description = "Region of the web app"
-  default     = "westeurope"
-
+  default = "westeurope"
 }
 
-variable "sku_name" {
-  type        = string
-  description = "SKU Name"
-  default     = "B1"
+variable "registry_name" {}
 
-}
+variable "container_group_name" {}
 
-variable "app_service_plan_name" {
-  type        = string
-  description = "App service plan name"
-  default     = "terraform-asp-dev"
-
-}
-
-variable "web_app_name" {
-  type        = string
-  description = "Web App Name"
-  default     = "terraform-linuxwebapp-dev"
-
-}
-
-
+variable "dns_label" {}
