@@ -39,7 +39,7 @@ Important rules:
 - Coordinate with the other students
 - **Maximum 2 students per region**
 
-Example distribution for 9 students:
+Example distribution for 10 students:
 
 | Region | Students |
 |------|------|
@@ -47,7 +47,7 @@ Example distribution for 9 students:
 | northeurope | 2 |
 | norwayeast | 2 |
 | switzerlandnorth | 2 |
-| canadacentral | 1 |
+| canadacentral | 2 |
 
 ---
 
