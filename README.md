@@ -12,7 +12,7 @@ This repository is organized into 5 labs, each covering essential Terraform conc
 
 - **[Lab 3: Remote Backend and Terraform Import command](./lab3/)** - Configuring Remote Backend in Azure and Importing existing resources to the code using Terraform Import command
 
-- **[Lab 4: Building a Reusable Module](./lab4/)** - Create a module to deploy a Container Registry and a Cobntainer Instance
+- **[Lab 4: Building a Reusable Module](./lab4/)** - Create a module to deploy a Container Registry and a Cobtainer Instance
 
 - **[Lab 5: CI/CD Pipeline with Terraform and Github Actions](./lab5/)** - Coming soon
 
