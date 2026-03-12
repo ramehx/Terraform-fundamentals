@@ -236,6 +236,8 @@ Run the following command to initialize the Terraform working directory and the 
 
 `terraform init`
 
+**OBS:** Every update on the modules requires a new  `terraform init` to reload the module definitions.
+
 ---
 
 # Step 9 — Review the Execution Plan
