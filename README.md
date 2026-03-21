@@ -14,7 +14,7 @@ This repository is organized into 5 labs, each covering essential Terraform conc
 
 - **[Lab 4: Building a Reusable Module](./lab4/)** - Create a module to deploy a Container Registry and a Container Instance
 
-- **[Lab 5: CI/CD Pipeline with Terraform and Github Actions](./lab5/)** - Coming soon
+- **[Lab 5: CI/CD Pipeline with Terraform and Github Actions](./lab5/)** - Industrialize deployment of Terraform infrastructure on Azure using Github Actions CI/CD Pipelines. 
 
 ---
 
