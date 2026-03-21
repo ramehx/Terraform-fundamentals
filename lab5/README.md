@@ -428,9 +428,8 @@ This forces **manual approval before the CD job runs**.
 
 * * *
 
-⚠ **Instructor reminder**
+<img width="70%" alt="image" src="https://github.com/user-attachments/assets/6ca8a3ef-b3ae-43b7-950e-6e8350ec4eb4" />
 
-Insert screenshot showing **GitHub Environment approval configuration**.
 
 * * *
 
