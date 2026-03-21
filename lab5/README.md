@@ -453,7 +453,8 @@ Create a **Pull Request**.
 
 The **CI job will run automatically** and show the Terraform plan.
 
-<img width="1123" height="605" alt="image" src="https://github.com/user-attachments/assets/10195552-2681-4742-bf5e-06ff484b2dc5" />
+<img width="1197" height="513" alt="image" src="https://github.com/user-attachments/assets/6d58088c-5ccf-438a-b3ea-2bec92d8af91" />
+
 
 Click on the "Terraform Plan (CI)" Stage to check the steps executed by the pipeline as they were defined on the pipeline yaml file:
 
