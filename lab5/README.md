@@ -118,13 +118,13 @@ cd terraform\github-lab
 Create the following structure:
 ```
 terraform
-│
-├ backend.tf
-├ main.tf
-├ variables.tf
-├ outputs.tf
-├ providers.tf
-└ terraform.tfvars
+ │
+ ├ backend.tf
+ ├ main.tf
+ ├ variables.tf
+ ├ outputs.tf
+ ├ providers.tf
+ └ terraform.tfvars
 ```
 
 * * *
@@ -279,7 +279,9 @@ Navigate to:
 
 Create a secret named:
 
-`AZURE\_CREDENTIALS`
+`AZURE_CREDENTIALS`
+
+**OBS:** ask your instructor about the Service Principal credentials for this lab.
 
 Paste the Service Principal JSON credentials.
 
@@ -293,11 +295,10 @@ Example:
   "tenantId": "..."
 }
 ```
-* * *
 
-⚠ **Instructor reminder**
+<img width="60%" alt="image" src="https://github.com/user-attachments/assets/3450ec17-aa25-4cd1-92a2-ceb0abf3903c" />
 
-Insert screenshot showing **GitHub Secrets configuration**.
+<img width="60%" alt="image" src="https://github.com/user-attachments/assets/2facb068-f019-4f2d-9cc8-c86472d2ac71" />
 
 * * *
 
