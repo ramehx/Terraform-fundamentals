@@ -87,27 +87,29 @@ Workflows are written in **YAML** and stored inside:
 
 `.github/workflows/`
 
-* * *
 
-⚠ **Instructor reminder**
+<img width="1355" height="635" alt="image" src="https://github.com/user-attachments/assets/2062943d-a6c5-44fa-850c-bf4a0d03ac69" />
 
-Insert screenshot showing:
-
-*   GitHub repository structure
-*   `.github/workflows` directory
 
 * * *
 
-## Step 2 : Clone the Repository
+## Step 2 : Create and clone the Repository
 
-Clone the lab repository.
+On your Github account, create a new Repo for our project:
+
+<img width="893" height="855" alt="image" src="https://github.com/user-attachments/assets/94e82ed3-9aa6-4bf2-ae6d-4e33295938c9" />
+
+
+Then locally, clone the lab repository.
 
 ```
-git clone https://github.com/YOUR\_REPOSITORY\_URL
+git clone https://github.com/YOUR-ACCOUNT\REPOSITORY\URL
 ```
+<img width="948" height="447" alt="image" src="https://github.com/user-attachments/assets/d1e50328-a147-4cd4-92b1-3723093e4630" />
+
 Navigate to the folder:
 ```
-cd terraform\-github-lab
+cd terraform\github-lab
 ```
 * * *
 
