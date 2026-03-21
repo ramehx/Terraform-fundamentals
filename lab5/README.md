@@ -58,24 +58,9 @@ After completing this lab you will be able to:
 
 * * *
 
-## Prerequisites
-
-Before starting this lab you should already have:
-
-*   Basic knowledge of **Azure Portal**
-*   Understanding of **Service Principals and RBAC**
-*   Terraform workflow experience (init → plan → apply)
-*   Azure Trial Subscription
-*   Terraform installed locally
-*   Azure CLI installed
-*   A GitHub repository created
-*   Basic Git knowledge (clone, commit, push)
-
-* * *
-
 ## Step 1 : Introduction to GitHub and GitHub Actions
 
-## What** **is GitHub?
+## What is GitHub?
 
 GitHub is a platform used for:
 
@@ -147,13 +132,13 @@ Students will continue using the **remote backend implemented in the previous la
 
 Create `backend.tf`.
 
-```
+```hcl
 terraform {
   backend "azurerm" {
-    resource_group_name  = "rg-tfstate"
-    storage_account_name = "tfstatestorage"
+    resource_group_name  = "existing-backend-rg"
+    storage_account_name = "existingstorageaccount"
     container_name       = "tfstate"
-    key                  = "lab5.terraform.tfstate"
+    key = "student-<yourname>.tfstate"
   }
 }
 ```
@@ -167,7 +152,7 @@ This ensures the Terraform state file is stored remotely.
 
 Create `main.tf`.
 
-```
+```hcl
 terraform {
   required_providers {
     azurerm = {
@@ -188,7 +173,7 @@ provider "azurerm" {
 
 Create `variables.tf`.
 
-```
+```hcl
 variable "location" {
   description = "Azure region where resources will be deployed"
   type        = string
@@ -210,7 +195,6 @@ variable "container_name" {
   default     = "lab-container"
 }
 ```
-This reinforces the importance of **declaring variables explicitly** in Terraform configurations.
 
 * * *
 
@@ -218,7 +202,7 @@ This reinforces the importance of **declaring variables explicitly** in Terrafor
 
 Add the following resources to `main.tf`.
 
-```
+```hcl
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
   location = var.location
@@ -245,7 +229,7 @@ resource "azurerm_storage_container" "container" {
 
 Create `outputs.tf`.
 
-```
+```hcl
 output "storage_account_name" {
   value = azurerm_storage_account.storage.name
 }
@@ -271,7 +255,7 @@ Each student should deploy to **one of the following regions**:
 
 Example:
 
-```
+```hcl
 location             = "westeurope"
 resource_group_name  = "rg-lab5-student1"
 storage_account_name = "stlab5student01"
@@ -298,7 +282,7 @@ Paste the Service Principal JSON credentials.
 
 Example:
 
-```
+```json
 {
   "clientId": "...",
   "clientSecret": "...",
@@ -326,7 +310,7 @@ Create the file:
 
 This job performs **Continuous Integration validation**.
 
-```
+```yaml
 name: Terraform CI/CD Pipeline
 
 on:
@@ -381,7 +365,7 @@ This job runs when a **Pull Request is created**, ensuring infrastructure change
 
 This job performs **Continuous Deployment**.
 
-```
+```yaml
   terraform_cd:
 
     name: Terraform Apply (CD)
@@ -450,7 +434,7 @@ Insert screenshot showing **GitHub Environment approval configuration**.
 
 Create a new branch and commit your Terraform code.
 
-```
+```bash
 git checkout -b lab5  
 git add .  
 git commit -m "Add Terraform CI/CD pipeline"  
