@@ -81,7 +81,7 @@ Open the following file:
 
 Add the following configuration:
 
-```
+```hcl
 resource "azurerm_container_registry" "acr" {
   name                = var.registry_name
   resource_group_name = var.resource_group_name
@@ -127,7 +127,7 @@ Create the file:
 
 `modules/container-app/variables.tf`
 
-```
+```hcl
 variable "resource_group_name" {
   description = "Resource group where resources will be deployed"
   type        = string
@@ -161,7 +161,7 @@ Create the file:
 
 `modules/container-app/outputs.tf`
 
-```
+```hcl
 output "container_fqdn" {
   value = azurerm_container_group.container.fqdn
 }
@@ -177,7 +177,7 @@ For this lab, the Resource Group is already created beforehand in the Azure Port
 
 Add the following configuration to `main.tf` in the root module:
 
-```
+```hcl
 data "azurerm_resource_group" "rg" {
   name = "RESOURCE_GROUP_NAME_PORTAL"
 }
@@ -191,7 +191,7 @@ This tells Terraform to retrieve information about an existing resource group.
 
 Still in the root `main.tf`, call the module:
 
-```
+```hcl
 module "container_app" {
   source = "./modules/container-app"
 
@@ -215,7 +215,7 @@ Here we pass:
 
 Create `variables.tf` in the root directory.
 
-```
+```hcl
 variable "registry_name" {
   description = "Container registry name"
 }
