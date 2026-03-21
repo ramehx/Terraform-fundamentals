@@ -88,7 +88,7 @@ Create the Azure provider configuration.
 
 Example:
 
-```
+```hcl
 provider "azurerm" {
   features {}
 }
@@ -110,7 +110,7 @@ Create a resource block describing the **existing Resource Group**.
 
 Example structure:
 
-```
+```hcl
 resource "azurerm_resource_group" "lab_rg" {
   name     = var.resource_group_name
   location = var.location
@@ -138,7 +138,7 @@ terraform import azurerm_resource_group.lab_rg <RESOURCE_ID>
 
 Example:
 
-```
+```bash
 terraform import azurerm_resource_group.lab_rg /subscriptions/<SUB_ID>/resourceGroups/<RG_NAME>
 ```
 <img width="1055" height="206" alt="image" src="https://github.com/user-attachments/assets/cd722401-581c-4fe8-9d18-3d1c6f17c503" />
@@ -146,7 +146,7 @@ terraform import azurerm_resource_group.lab_rg /subscriptions/<SUB_ID>/resourceG
 
 After importing, run:
 
-```
+```bash
 terraform plan
 ```
 Terraform will compare the **existing infrastructure** with your **Terraform code**.
@@ -176,7 +176,7 @@ Now repeat the same process for a **Virtual Network**.
 
 Add a resource block similar to:
 
-```
+```hcl
 resource "azurerm_virtual_network" "lab_vnet" {
   name                = var.vnet_name
   location            = var.location
@@ -208,7 +208,7 @@ terraform import azurerm_virtual_network.lab_vnet /subscriptions/<SUB_ID>/resour
 
 Run:
 
-```
+```bash
 terraform plan
 ```
 
@@ -228,7 +228,7 @@ Create a `backend.tf` file.
 
 Example structure:
 
-```
+```hcl
 terraform {
 
   backend "azurerm" {
@@ -248,7 +248,7 @@ Each student must use a **unique key** to avoid overwriting another student's st
 
 Example:
 
-```
+```bash
 key = "terraform-lab3-pedro.tfstate"
 ```
 
@@ -258,7 +258,7 @@ key = "terraform-lab3-pedro.tfstate"
 
 Initialize Terraform again and migrate the state:
 
-```
+```bash
 terraform init -migrate-state
 ```
 
@@ -281,7 +281,7 @@ After migration, Terraform state will be stored in **Azure Blob Storage**.
 
 Run:
 
-```
+```bash
 terraform plan
 ```
 
