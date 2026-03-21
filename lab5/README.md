@@ -97,7 +97,7 @@ Workflows are written in **YAML** and stored inside:
 
 On your Github account, create a new Repo for our project:
 
-<img width="893" height="855" alt="image" src="https://github.com/user-attachments/assets/94e82ed3-9aa6-4bf2-ae6d-4e33295938c9" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/94e82ed3-9aa6-4bf2-ae6d-4e33295938c9" />
 
 
 Then locally, clone the lab repository.
@@ -105,7 +105,7 @@ Then locally, clone the lab repository.
 ```
 git clone https://github.com/YOUR-ACCOUNT\REPOSITORY\URL
 ```
-<img width="948" height="447" alt="image" src="https://github.com/user-attachments/assets/d1e50328-a147-4cd4-92b1-3723093e4630" />
+<img width="60%" alt="image" src="https://github.com/user-attachments/assets/d1e50328-a147-4cd4-92b1-3723093e4630" />
 
 Navigate to the folder:
 ```
