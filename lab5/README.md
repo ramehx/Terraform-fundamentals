@@ -410,6 +410,11 @@ This job performs **Continuous Deployment**.
         run: terraform apply -auto-approve tfplan
 ```
 
+**OBS:** Your final folder structure should be like:
+
+<img width="40%" alt="image" src="https://github.com/user-attachments/assets/39e88fec-2f88-4d5b-9d85-db446e620a35" />
+
+
 * * *
 
 ## Step 12 : Configure Environment Approval
@@ -447,6 +452,12 @@ git push origin lab5
 Create a **Pull Request**.
 
 The **CI job will run automatically** and show the Terraform plan.
+
+<img width="1123" height="605" alt="image" src="https://github.com/user-attachments/assets/10195552-2681-4742-bf5e-06ff484b2dc5" />
+
+Click on the "Terraform Plan (CI)" Stage to check the steps executed by the pipeline as they were defined on the pipeline yaml file:
+
+<img width="652" height="850" alt="image" src="https://github.com/user-attachments/assets/5914c4d8-214f-4007-b102-71570d0fc6f7" />
 
 * * *
 
