@@ -123,6 +123,7 @@ terraform
 ├ main.tf
 ├ variables.tf
 ├ outputs.tf
+├ providers.tf
 └ terraform.tfvars
 ```
 
@@ -152,7 +153,7 @@ This ensures the Terraform state file is stored remotely.
 
 ## Step 5 : Configure the Azure Provider
 
-Create `main.tf`.
+Create `providers.tf`.
 
 ```hcl
 terraform {
@@ -202,7 +203,7 @@ variable "container_name" {
 
 ## Step 7 : Define Infrastructure Resources
 
-Add the following resources to `main.tf`.
+Create `main.tf` and add the following resources code to:
 
 ```hcl
 resource "azurerm_resource_group" "rg" {
