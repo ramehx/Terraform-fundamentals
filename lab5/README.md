@@ -374,7 +374,7 @@ This job performs **Continuous Deployment**.
 
     name: Terraform Apply (CD)
 
-    if: github.event_name == 'push'
+    if: github.event_name == 'pull_request'
 
     needs: terraform_ci
 
@@ -473,6 +473,13 @@ The CD pipeline will:
 3.  Execute Terraform Apply
 4.  Deploy the infrastructure
 
+<img width="1538" height="514" alt="image" src="https://github.com/user-attachments/assets/d6d8f172-df76-4da1-8c61-3cd34d38c7aa" />
+
+<img width="998" height="579" alt="image" src="https://github.com/user-attachments/assets/1d22bf5a-2735-4d7e-bc66-d2cd44136e1e" />
+
+<img width="1082" height="859" alt="image" src="https://github.com/user-attachments/assets/ae27460f-8256-4e4c-abef-439c8266e69e" />
+
+
 * * *
 
 ## Expected Result
@@ -521,9 +528,9 @@ Azure Infrastructure Deployment
 In this lab you learned how to:
 
 *   Use **GitHub Actions to automate Terraform deployments**
-*   Separate **CI (validation) and CD (deployment)**
+*   Separate stages: **CI (validation) and CD (deployment)**
 *   Authenticate Terraform using **Service Principals**
 *   Secure credentials using **GitHub Secrets**
 *   Protect production environments with **manual approvals**
 
-This workflow represents a **common DevOps pattern used by cloud engineering teams** to manage infrastructure safely and consistently
+This workflow represents a **common DevOps pattern used by cloud engineering teams** to manage infrastructure safely and consistently.
