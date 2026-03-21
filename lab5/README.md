@@ -131,7 +131,7 @@ terraform
 
 ## Step 4 : Configure the Remote Backend
 
-Students will continue using the **remote backend implemented in the previous lab**.
+You should continue using the **remote backend implemented in the previous lab**.
 
 Create `backend.tf`.
 
