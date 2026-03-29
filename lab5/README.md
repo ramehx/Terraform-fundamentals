@@ -374,7 +374,7 @@ This job performs **Continuous Deployment**.
 
     name: Terraform Apply (CD)
 
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'push'
 
     needs: terraform_ci
 
